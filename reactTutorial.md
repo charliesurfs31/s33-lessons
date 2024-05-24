@@ -1,7 +1,3 @@
-Sure! Here's a brief introductory run-through of React in a .txt format:
-
----
-
 # Introduction to React
 
 ## What is React?
@@ -29,13 +25,15 @@ React is a popular JavaScript library for building user interfaces, particularly
   npx create-react-app my-app
   ```
 - **Rendering a Component**: Use `ReactDOM.render` to render a React component into the DOM.
-  ```javascript
-  import React from 'react';
-  import ReactDOM from 'react-dom';
-  import App from './App';
 
-  ReactDOM.render(<App />, document.getElementById('root'));
+  ```javascript
+  import React from "react";
+  import ReactDOM from "react-dom";
+  import App from "./App";
+
+  ReactDOM.render(<App />, document.getElementById("root"));
   ```
+
 - **Function Components**: Define a component using a JavaScript function.
   ```javascript
   function Welcome(props) {
@@ -51,8 +49,9 @@ React is a popular JavaScript library for building user interfaces, particularly
   }
   ```
 - **useState Hook**: A hook that allows you to add state to function components.
+
   ```javascript
-  import React, { useState } from 'react';
+  import React, { useState } from "react";
 
   function Counter() {
     const [count, setCount] = useState(0);
@@ -60,20 +59,20 @@ React is a popular JavaScript library for building user interfaces, particularly
     return (
       <div>
         <p>You clicked {count} times</p>
-        <button onClick={() => setCount(count + 1)}>
-          Click me
-        </button>
+        <button onClick={() => setCount(count + 1)}>Click me</button>
       </div>
     );
   }
   ```
+
 - **useEffect Hook**: A hook that allows you to perform side effects in function components.
+
   ```javascript
-  import React, { useEffect } from 'react';
+  import React, { useEffect } from "react";
 
   function Example() {
     useEffect(() => {
-      document.title = 'Hello, World!';
+      document.title = "Hello, World!";
     });
 
     return <div>Look at the title of the page</div>;
